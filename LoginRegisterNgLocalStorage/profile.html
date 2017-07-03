@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>HomePage</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.5/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.5/angular-route.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="profileCntrl">
+    <header>
+        <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="" class="navbar-brand">NgAppLocalStorage</a>
+                </div>
+                <div class="collpase navbar-collapse" id="example">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#/homepage" class="active">HomePage</a></li>
+                        <li><a href="#/profile">Profile</a></li>
+                        <li><a href="#/messages">Messages</a></li>
+                    </ul>
+                    <div class="navbar-form navbar-right" role="search">
+                        <button class="btn btn-primary">Logout</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+  
+    <form ng-controller="profileCntrl" id="registerForm">
+        <br/><br/>
+    <h2>  Update details</h2>
+    <input type="text" ng-model="firstName" class="form-control" placeholder="first name" required><br />
+    <input type="text" ng-model="lastName" class="form-control" placeholder="last name" required /><br />
+    <input type="text" ng-model="userName" class="form-control" placeholder="user name" required /><br />
+    <input type="password" ng-model="password" class="form-control" placeholder="password" required /><br />
+    Gender :
+    <input type="radio" ng-model="myVar" value="Male">Male
+    <input type="radio" ng-model="myVar" value="Female">Female <br /> <br />
+    <input type="text" ng-model="email" class="form-control" placeholder="email" required /><br />
+    <input type="text" ng-model="phone" class="form-control" placeholder="phoneNumber" required /><br />
+    <button type="submit" ng-click="updateAccount()" class="btn btn-primary"> update </button>
+ 
+    </form>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

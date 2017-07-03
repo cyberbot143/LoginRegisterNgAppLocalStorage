@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>HomePage</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.5/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.5/angular-route.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="messagesCntrl">
+    <header>
+        <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="" class="navbar-brand">NgAppLocalStorage</a>
+                </div>
+                <div class="collpase navbar-collapse" id="example">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#/homepage" class="active">HomePage</a></li>
+                        <li><a href="#/profile">Profile</a></li>
+                        <li><a href="#/messages">Messages</a></li>
+                    </ul>
+                    <div class="navbar-form navbar-right" role="search">
+                        <button class="btn btn-primary" ng-click="logout()">Logout</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="container">
+                <h2>conversations</h2> <br/>
+                <h4>Choose user</h4><select class="selectpicker"><option ng-repeat="x in names">{{x}}</option></select><br/><br/>
+                <input type="text" class="form-control" placeholder="subject here">
+                <textarea class = "form-control" ng-model="mailArea" rows="8" cols="50">
+                At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies. 
+                </textarea>
+                <button type="button" class="btn btn-warning btn-xs">Send Message</button>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Sender</th>
+                            <th>Recipient</th>
+                            <th>Subject</th>
+                            <th>Message</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            
+                        </tr>
+                        <tr>
+                            <td>Rakesh</td>
+                            <td>Roshan</td>
+                            <td>Guest Lecture</td>
+                            <td>Can u meet me at 5:00PM</td>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>Lunch</td>
+                            <td>Can u meet me at 5:00PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </header>
+  
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

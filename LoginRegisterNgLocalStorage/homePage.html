@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>HomePage</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.5/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.5/angular-route.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <header>
+        <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="" class="navbar-brand">NgAppLocalStorage</a>
+                </div>
+                <div class="collpase navbar-collapse" id="example">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#/homepage" class="active">HomePage</a></li>
+                        <li><a href="#/profile">Profile</a></li>
+                        <li><a href="#/messages">Messages</a></li>
+                    </ul>
+                    <div class="navbar-form navbar-right" role="search">
+                        <button class="btn btn-primary" ng-click="logout()">Logout</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="container" ng-controller="homePageCntrl">
+                <h2>Welcome to {{ Current_User_Email }} </h2>
+               
+
+            </div>
+        </div>
+    </header>
+
+   
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

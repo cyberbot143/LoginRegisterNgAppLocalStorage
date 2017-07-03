@@ -1,0 +1,15 @@
+﻿<!--Partial view Register-->
+<form ng-controller="registerCntrl" id="registerForm">
+    <h2>  Register form</h2>
+    <input type="text" ng-model="firstName" class="form-control" placeholder="first name" required><br />
+    <input type="text" ng-model="lastName" class="form-control" placeholder="last name" required /><br />
+    <input type="text" ng-model="userName" class="form-control" placeholder="user name" required /><br />
+    <input type="password" ng-model="password" class="form-control" placeholder="password" required /><br />
+    Gender : 
+    <input type="radio" ng-model="myVar" value="Male">Male
+    <input type="radio" ng-model="myVar" value="Female">Female <br /> <br/>
+    <input type="text" ng-model="email" class="form-control" placeholder="email" required /><br />
+    <input type="text" ng-model="phone" class="form-control" placeholder="phoneNumber" required /><br />
+    <button type = "submit" ng-click="CreateAccount()" class="btn btn-primary"> Register </button>
+   
+</form>
